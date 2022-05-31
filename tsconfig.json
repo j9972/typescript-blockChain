@@ -1,0 +1,11 @@
+{
+    // 어디에 ts파일이 생기나
+    "include": ["src"],
+    "compilerOptions": {
+        "outDir": "build",
+        "target": "ES6", // JS로 호환될떄 JS의 버전을 보여준다.
+        // DOM을 써주면, document를 쓸때 그가 가지고 있는 모든 메소드를 보여준다. 안써주면 node를 사용하는 백엔드 플젝 같아 보임
+        "lib": ["ES6", "DOM"], // 중요, 나의 JS코드가 어디에서 동작할지 알려준다는 의미
+        "strict": true,
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "typescript-blockchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j9972/typescript-blockChain.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j9972/typescript-blockChain/issues"
+  },
+  "homepage": "https://github.com/j9972/typescript-blockChain#readme",
+  "devDependencies": {
+    "typescript": "^4.7.2"
+  }
+}

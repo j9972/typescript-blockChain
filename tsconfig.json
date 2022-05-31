@@ -3,13 +3,15 @@
     "include": ["src"],
     "compilerOptions": {
         "outDir": "build",
-        "esModuleInterop": true,
+        // crypto 같은 모듈을 부르는데 ' * as ' 이거 없이 부르기 가능
+        "esModuleInterop": true, 
         "target": "ES6", // JS로 호환될떄 JS의 버전을 보여준다.
         // DOM을 써주면, document를 쓸때 그가 가지고 있는 모든 메소드를 보여준다. 안써주면 node를 사용하는 백엔드 플젝 같아 보임
         "lib": ["ES6", "DOM"], // 중요, 나의 JS코드가 어디에서 동작할지 알려준다는 의미
         "strict": true,
         // typescript안에 JS를 허룔한다는 의미 "./jsfile" 허용
         // typescript는 js도 보호해주는데 -> ' // @ts-check ' 라고 적어주기
-        "allowJs": true // 코드가 많을때 사용하면 좋음, 
+        // "allowJs": true, // 코드가 많을때 사용하면 좋음,  ( 결론 ty,js 같이 사용 가능)
+        "module": "CommonJS",
     }
 }
